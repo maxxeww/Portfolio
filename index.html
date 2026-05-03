@@ -1,0 +1,271 @@
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Mathew Francis | Portfolio</title> 
+
+<style> 
+:root {
+--primary: #003366;
+--accent: #0077be;
+--light: #b3d9ff;
+--bg: #000d1a;
+--text: #ffffff;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+background: radial-gradient(circle at top, #002244, #001122); 
+color: var(--text);
+scroll-behavior: smooth;
+}
+
+/* NAVBAR */ 
+nav {
+position: fixed;
+width: 100%;
+top: 0;
+background: rgba(0, 13, 26, 0.8); backdrop-filter: blur(12px);
+display: flex;
+justify-content: center; gap: 30px;
+padding: 15px; z-index: 1000;
+}
+
+nav a {
+color: var(--light);
+text-decoration: none; font-size: 0.9rem;
+transition: 0.3s;
+}
+
+nav a:hover {
+color: var(--accent);
+}
+
+/* HERO */
+.hero {
+height: 100vh; display: flex;
+flex-direction: column; justify-content: center; align-items: center;
+text-align: center;
+background: radial-gradient(circle at top, #00264d, #000d1a);
+}
+
+.hero h1 {
+font-size: 3rem;
+text-shadow: 0 0 10px rgba(0,119,190,0.6);
+}
+
+.hero p {
+margin-top: 10px;
+color: var(--accent);
+}
+
+.btn {
+margin-top: 20px;
+padding: 10px 20px; border: none;
+background: var(--accent); color: white;
+border-radius: 20px; cursor: pointer;
+transition: 0.3s;
+}
+
+.btn:hover {
+transform: scale(1.1);
+box-shadow: 0 0 15px var(--accent);
+}
+
+/* SECTIONS */ 
+section {
+padding: 80px 10%;
+}
+
+h2 {
+margin-bottom: 20px; color: var(--light);
+}
+
+/* HERO IMAGE VERSION */
+.hero {
+height: 100vh;
+background: url('cover.jpg') center/cover no-repeat; position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top:80px;
+}
+
+.hero::before { 
+content: "";
+position: absolute; inset: 0;
+background: rgba(0, 13, 26, 0.7);
+}
+
+.hero-overlay {
+position: relative; text-align: center; z-index: 1;
+}
+
+/* CARDS */
+.card {
+background: rgba(255,255,255,0.05); padding: 20px;
+border-radius: 12px; margin-top: 20px;
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 0 15px rgba(0,119,190,0.3);
+}
+
+/* GRID */
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;
+}
+
+/* FOOTER */ 
+footer {
+text-align: center; padding: 20px;
+color: var(--accent); font-size: 0.9rem;
+}
+</style> 
+</head> 
+
+<body> 
+
+<nav> 
+<a href="#about">About</a> 
+<a href="#skills">Skills</a> 
+<a href="#projects">Projects</a> 
+<a href="#achievements">Achievements</a> 
+<a href="#certificates">Certificates</a> 
+<a href="#learning">Learning</a> 
+<a href="#contact">Contact</a> 
+</nav> 
+
+<section class="hero"> 
+<div class="hero-overlay"> 
+<h1>Mathew Francis</h1> 
+<p>Building towards Research, Astronomy & Scientific Computing</p> 
+<button class="btn" onclick="scrollToSection()">View Work</button> 
+</div> 
+</section> 
+
+<section id="about"> 
+<h2>About Me</h2> 
+<div class="card"> 
+<p> 
+I am a Chemical Engineering undergraduate at MIT Academy of Engineering, with a strong interest in research and astronomy. I am currently building skills in Python and analytical thinking to apply them in scientific fields.
+</p> 
+</div> 
+</section> 
+
+<section> 
+<h2>Areas of Interest</h2> 
+<div class="grid"> 
+<div class="card">Stellar Astronomy</div> 
+<div class="card">Space Phenomena</div> 
+<div class="card">Scientific Research</div> 
+<div class="card">Computational Science</div> 
+</div> 
+</section> 
+
+<section id="skills"> 
+<h2>Skills</h2> 
+<div class="grid"> 
+<div class="card">Basic Python</div> 
+<div class="card">Analytical Thinking</div> 
+<div class="card">Article Writing</div> 
+<div class="card">NumPy & CSV</div> 
+</div> 
+</section> 
+
+<section id="projects"> 
+<h2>Projects</h2> 
+<div class="grid"> 
+<div class="card"> 
+<h3>Student Data Analysis (Python)</h3> 
+<p> 
+Processed structured datasets using CSV files and performed basic analysis.
+Built foundational skills relevant to scientific data handling.
+</p>
+</div> 
+<div class="card"> 
+<h3>NumPy Computation</h3> 
+<p> 
+Applied numerical computing techniques using NumPy.
+Developed an understanding of efficient data processing.
+</p> 
+</div> 
+</div> 
+</section> 
+
+<section id="achievements"> 
+<h2>Achievements</h2> 
+<div class="card"> 
+<h3>Gold Medal – Department Competition</h3> 
+<p> 
+Secured first place in an official departmental competition organized by the college.
+Worked as part of a team of three and was awarded a Gold Medal along with a Certificate of Appreciation by the Head of Department.
+</p> 
+</div> 
+</section> 
+
+<section id="certificates"> 
+<h2>Certificates</h2> 
+<div class="grid"> 
+<div class="card"> 
+<h3>NASSCOM Digital 101</h3> 
+<p> 
+A certificate of proof that I've learned Digital IBM Skills namely- AI,IoT, Blockchain, Data Analysis, etc.
+</p> 
+<a href="https://drive.google.com/file/d/1vaYxk6ewmOz4sqtzMRdQUP9H2i5uQryy/view?usp=drivesdk">View Certificate</a> 
+</div> 
+<div class="card"> 
+<h3>Python Essentials</h3> 
+<p> 
+Certicate earned to showcase profficiency in basic python skills.
+</p> 
+<a href="https://drive.google.com/drive/folders/1lZu1Cyvc7-75-lT7mLU1JDXCOU0d8Ikt">View Certificate</a> 
+</div> 
+</div> 
+</section> 
+
+<section id="learning"> 
+<h2>Learning & Exploration</h2> 
+<div class="card"> 
+<p> 
+Currently exploring concepts in astronomy such as stellar behavior, variable stars, and space phenomena. Developing an understanding of how computational tools like Python can be applied in scientific research and data analysis.
+</p> 
+</div> 
+</section> 
+
+<section> 
+<h2>Upcoming Work</h2> 
+<div class="card"> 
+<p> 
+Working on developing a Python-based project related to scientific or astronomical data analysis.
+</p> 
+</div> 
+</section> 
+
+<section id="contact"> 
+<h2>Contact</h2> 
+<div class="card"> 
+<p>Email: francismathew629@gmail.com</p> 
+</div> 
+</section> 
+
+<footer> 
+© 2026 Mathew Francis • Built with a passion for science 🚀
+</footer> 
+
+<script> 
+function scrollToSection() {
+document.getElementById("about").scrollIntoView({behavior: "smooth"});
+}
+</script> 
+
+</body> 
+</html>
